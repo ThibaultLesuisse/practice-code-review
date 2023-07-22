@@ -7,7 +7,7 @@
     "lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe",
     "lint:ls": "ls-lint",
     "lint:md": "markdownlint --ignore node_modules --ignore docs --config ./.markdownlint.jsonc --fix ./ ",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests --coverage ",
+    "test": "jest --passWithNoTests --coverage ",
     "spell-check": "cspell  './**'"
   },
   "type": "module",
@@ -33,5 +33,8 @@
     "jest": "^26.6.3",
     "markdownlint-cli": "^0.28.1",
     "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5"
   }
 }
