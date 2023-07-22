@@ -16,7 +16,8 @@ jobs:
       - name: Use latest Node.js 
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts'
+          check-latest: true
+          node-version: 'lts/Hydrogen'
 
       - run: npm install
 
