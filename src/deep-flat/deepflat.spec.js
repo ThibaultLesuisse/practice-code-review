@@ -1,4 +1,4 @@
-import deepflat from './deepflat';
+import deepflat from './deepflat.js';
 
 describe('When valid arguments are passed', () => {
   it('Should return valid array when passed array is already flat', () => {
@@ -8,11 +8,11 @@ describe('When valid arguments are passed', () => {
     expect(deepflat(['a', ['b']])).toEqual(['a', 'b']);
   });
   it('Should return a flattened array when there are two nested arrays', () => {
-    let arg = ['a', ['b', ['c']]];
+    const arg = ['a', ['b', ['c']]];
     expect(deepflat(arg)).toEqual(['a', 'b', 'c']);
   });
   it('Should return a flattened array when there are two nested arrays with numbers', () => {
-    let arg = [1, [2, [3]]];
+    const arg = [1, [2, [3]]];
     expect(deepflat(arg)).toEqual([1, 2, 3]);
   });
 });
