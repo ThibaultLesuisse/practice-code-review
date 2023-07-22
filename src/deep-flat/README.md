@@ -28,6 +28,16 @@ helps you understand:
  * // -> ['a', 'b', 'c', 'd', 'e']
  */
 ```
+## Strategy
 
+Recursion will be used to try and tackle deeply nested arrays.
+If we notice that one element of an array is an array we recursively call the function
+
+## Use cases
+```js
+let products = ['apple', ['pear', 'cherry']];
+let flattenedFruits = deepFlat(products);
+console.log(flattenedFruits);
+```
 > Docstring is adapted from
 > [lodash's flattenDeep](https://github.com/lodash/lodash/blob/4.17.15/lodash.js#L7330)
