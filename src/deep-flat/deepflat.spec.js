@@ -1,4 +1,4 @@
-import deepflat from './deepflat.js';
+import {deepflat} from './deepflat.js';
 
 describe('When valid arguments are passed', () => {
   it('Should return valid array when passed array is already flat', () => {

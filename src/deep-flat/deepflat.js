@@ -7,7 +7,7 @@
  * deepflat(['a', ['b', ['c']]])
  * @returns {Array} - The flattened array.
  */
-const deepflat = (arr) => {
+export const deepflat = (arr) => {
   const result = [];
   for (const elem of arr) {
     if (!Array.isArray(elem)) {
@@ -20,5 +20,3 @@ const deepflat = (arr) => {
 
   return result;
 };
-
-export default deepflat;
